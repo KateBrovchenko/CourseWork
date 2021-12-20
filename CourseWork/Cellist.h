@@ -1,5 +1,4 @@
 #pragma once
-#include "Header.h"
 #include "Harmonist.h"
 
 class Cellist : public Harmonist

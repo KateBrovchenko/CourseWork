@@ -147,7 +147,9 @@
     <ClCompile Include="Harmonist.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Music.cpp" />
+    <ClCompile Include="MusicAlbum.cpp" />
     <ClCompile Include="MusicalCompositionType.cpp" />
+    <ClCompile Include="MusicalRecording.cpp" />
     <ClCompile Include="Performer.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Pianist.cpp" />
@@ -164,7 +166,9 @@
     <ClInclude Include="Harmonist.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="Music.h" />
+    <ClInclude Include="MusicAlbum.h" />
     <ClInclude Include="MusicalCompositionType.h" />
+    <ClInclude Include="MusicalRecording.h" />
     <ClInclude Include="Performer.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Pianist.h" />

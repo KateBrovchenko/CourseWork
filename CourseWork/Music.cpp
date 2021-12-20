@@ -1,5 +1,14 @@
 #include "Music.h"
 
+Music::Music()
+{
+	_composer = Person();
+	_name = string();
+	_type = nullptr;
+	_opus = string();
+	_date_of_creation = Date();
+}
+
 Music::Music(Person composer, string name, MusicalCompositionType* type, string opus, Date date)
 {
 	_composer = composer;

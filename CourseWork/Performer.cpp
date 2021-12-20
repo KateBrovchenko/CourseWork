@@ -1,5 +1,11 @@
 #include "Performer.h"
 
+Performer::Performer()
+{
+	_person = Person();
+	_harmonist = nullptr;
+}
+
 Performer::Performer(Person person, Harmonist* harmonist)
 {
 	_person = person;

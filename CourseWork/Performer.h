@@ -8,6 +8,7 @@ private:
 	Person _person;
 	Harmonist* _harmonist;
 public:
+	Performer();
 	Performer(Person person, Harmonist* harmonist);
 
 	Person GetPerson();

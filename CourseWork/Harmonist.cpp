@@ -1,8 +1,13 @@
 #include "Harmonist.h"
 
+Harmonist::Harmonist(string text)
+{
+    _text = text;
+}
+
 string Harmonist::GetText()
 {
-    _text;
+    return _text;
 }
 
 void Harmonist::SetText(string text)

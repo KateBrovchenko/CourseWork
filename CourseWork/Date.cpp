@@ -2,16 +2,16 @@
 
 Date::Date()
 {
-	_day = 0;
-	_month = 0;
-	_year = 0;
+	_day = 1;
+	_month = 1;
+	_year = 1;
 }
 
 Date::Date(int day, int month, int year)
 {
-	_day = day;
-	_month = month;
-	_year = year;
+	this->SetDay(day);
+	this->SetMonth(month);
+	this->SetYear(year);
 }
 
 int Date::GetDay()
@@ -31,17 +31,41 @@ int Date::GetYear()
 
 void Date::SetDay(int day)
 {
-	_day = day;
+	if (day > 0)
+	{
+		_day = day;
+	}
+	else
+	{
+		throw "Day is less oq equal 0!";
+		exit(1);
+	}
 }
 
 void Date::SetMonth(int month)
 {
-	_month = month;
+	if (month > 0)
+	{
+		_month = month;
+	}
+	else
+	{
+		throw "Month is less oq equal 0!";
+		exit(1);
+	}
 }
 
 void Date::SetYear(int year)
 {
-	_year = year;
+	if (year > 0)
+	{
+		_year = year;
+	}
+	else
+	{
+		throw "Year is less oq equal 0!";
+		exit(1);
+	}
 }
 
 string Date::ToString()
@@ -51,9 +75,9 @@ string Date::ToString()
 
 Date& Date::operator=(Date date)
 {
-	_day = date._day;
-	_month = date._month;
-	_year = date._year;
+	this->SetDay(date._day);
+	this->SetMonth(date._month);
+	this->SetYear(date._year);
 	return *this;
 }
 

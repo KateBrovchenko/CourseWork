@@ -4,9 +4,7 @@ Person::Person()
 {
 	_name = string();
 	_surname = string();
-	_date_of_birth.SetDay(0);
-	_date_of_birth.SetMonth(0);
-	_date_of_birth.SetYear(0);
+	_date_of_birth = Date();
 }
 
 Person::Person(string name, string surname, Date date)

@@ -1,5 +1,4 @@
 #pragma once
-#include "Header.h"
 #include "MusicalCompositionType.h"
 
 class Symphony : public MusicalCompositionType

@@ -1,5 +1,4 @@
 #pragma once
-#include "Header.h"
 #include "Person.h"
 #include "MusicalCompositionType.h"
 #include "Date.h"
@@ -13,6 +12,7 @@ private:
 	string _opus;
 	Date _date_of_creation;
 public: 
+	Music();
 	Music(Person composer, string name, MusicalCompositionType* type, string opus, Date date);
 
 	Person GetComposer();
