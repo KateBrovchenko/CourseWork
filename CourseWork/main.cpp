@@ -3,7 +3,33 @@
 #include "Sonata.h"
 #include "Cellist.h"
 
+template<typename T = int>
+T NormalSymbols(MusicAlbum music_album)
+{
+	int album_size = music_album.GetSize();
+	T normal_count = 0;
 
+	for (int i = 0; i < album_size; i++)
+	{
+		normal_count += (T)music_album[i].GetMusic().GetName().length();
+	}
+
+	return normal_count /= album_size;
+}
+
+template<typename T>
+T NormalDuration(MusicAlbum music_album)
+{
+	int album_size = music_album.GetSize();
+	T normal_count = 0;
+
+	for (int i = 0; i < album_size; i++)
+	{
+		normal_count += (T)music_album[i].GetDurationInSecnods();
+	}
+
+	return normal_count /= album_size;
+}
 
 int main()
 {
@@ -32,8 +58,8 @@ int main()
 	album.AddMusicalRecording(recording);
 
 	album.Print();
-	cout << album.NormalSymbols() << endl;
-	cout << album.NormalDuration() << endl;
+	cout << NormalSymbols<float>(album) << endl;
+	cout << NormalDuration<double>(album) << endl;
 
 	return 0;
 }

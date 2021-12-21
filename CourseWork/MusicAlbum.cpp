@@ -30,6 +30,18 @@ MusicAlbum::MusicAlbum(int size)
 	}
 }
 
+MusicAlbum::MusicAlbum(const MusicAlbum& music_album)
+{
+	_size = music_album._size;
+
+	_music_album = new MusicalRecording[_size];
+	for (int i = 0; i < _size; i++)
+	{
+		_music_album[i] = music_album._music_album[i];
+	}
+	_filled_size = music_album._filled_size;
+}
+
 void MusicAlbum::AddMusicalRecording(MusicalRecording musical_recording)
 {
 	if (_filled_size == 0)
@@ -62,32 +74,6 @@ void MusicAlbum::Print()
 int MusicAlbum::GetSize()
 {
 	return _size;
-}
-
-double MusicAlbum::NormalSymbols()
-{
-	int album_size = GetSize();
-	double	normal_count = 0;
-
-	for (int i = 0; i < album_size; i++)
-	{
-		normal_count += (double)_music_album[i].GetMusic().GetName().length();
-	}
-
-	return normal_count /= album_size;
-}
-
-double MusicAlbum::NormalDuration()
-{
-	int album_size = GetSize();
-	double	normal_count = 0;
-
-	for (int i = 0; i < album_size; i++)
-	{
-		normal_count += (double)_music_album[i].GetDurationInSecnods();
-	}
-
-	return normal_count /= album_size;
 }
 
 MusicalRecording& MusicAlbum::operator[](int index)
