@@ -1,5 +1,9 @@
 #include "Cellist.h"
 
+Cellist::Cellist() : Harmonist()
+{
+}
+
 Cellist::Cellist(string text) : Harmonist(text)
 {
 }

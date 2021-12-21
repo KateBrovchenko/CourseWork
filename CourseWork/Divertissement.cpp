@@ -1,5 +1,9 @@
 #include "Divertissement.h"
 
+Divertissement::Divertissement() : MusicalCompositionType()
+{
+}
+
 Divertissement::Divertissement(string name, string text) : MusicalCompositionType(name, text)
 {
 }

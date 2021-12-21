@@ -1,5 +1,9 @@
 #include "Pianist.h"
 
+Pianist::Pianist() : Harmonist()
+{
+}
+
 Pianist::Pianist(string text) : Harmonist(text)
 {
 }

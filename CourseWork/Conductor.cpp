@@ -1,5 +1,9 @@
 #include "Conductor.h"
 
+Conductor::Conductor() : Harmonist()
+{
+}
+
 Conductor::Conductor(string text) : Harmonist(text)
 {
 }

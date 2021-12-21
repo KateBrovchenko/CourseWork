@@ -17,6 +17,6 @@ public:
 	void SetPerson(Person person);
 	void SetHarmonist(Harmonist* harmonist);
 
-	Performer& operator=(Performer performer);
+	Performer& operator=(const Performer& performer);
 };
 

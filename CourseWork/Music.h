@@ -26,7 +26,8 @@ public:
 	void SetMusicalCompositionType(MusicalCompositionType* type);
 	void SetOpus(string opus);
 	void SetDateOfCreation(Date date);
+	void SetDateOfCreation(int day, int month, int year);
 
-	Music& operator=(Music music);
+	Music& operator=(const Music& music);
 };
 

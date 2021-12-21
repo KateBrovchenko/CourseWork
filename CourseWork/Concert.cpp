@@ -1,5 +1,9 @@
 #include "Concert.h"
 
+Concert::Concert() : MusicalCompositionType()
+{
+}
+
 Concert::Concert(string name, string text) : MusicalCompositionType(name, text)
 {
 }

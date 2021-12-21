@@ -1,5 +1,11 @@
 #include "MusicalCompositionType.h"
 
+MusicalCompositionType::MusicalCompositionType()
+{
+	_name = string();
+	_text = string();
+}
+
 MusicalCompositionType::MusicalCompositionType(string name, string text)
 {
 	_name = name;

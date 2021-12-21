@@ -1,5 +1,10 @@
 #include "Harmonist.h"
 
+Harmonist::Harmonist()
+{
+    _text = string();
+}
+
 Harmonist::Harmonist(string text)
 {
     _text = text;

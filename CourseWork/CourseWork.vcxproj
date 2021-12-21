@@ -165,6 +165,7 @@
     <ClInclude Include="Divertissement.h" />
     <ClInclude Include="Harmonist.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="HeaderClasses.h" />
     <ClInclude Include="Music.h" />
     <ClInclude Include="MusicAlbum.h" />
     <ClInclude Include="MusicalCompositionType.h" />

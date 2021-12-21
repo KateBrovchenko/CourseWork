@@ -4,6 +4,7 @@
 class Concert : public MusicalCompositionType
 {
 public:
+	Concert();
 	Concert(string name, string text);
 
 	void ShowType() override;

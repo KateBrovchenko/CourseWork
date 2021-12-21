@@ -1,5 +1,9 @@
 #include "Sonata.h"
 
+Sonata::Sonata() : MusicalCompositionType()
+{
+}
+
 Sonata::Sonata(string name, string text) : MusicalCompositionType(name, text)
 {
 }

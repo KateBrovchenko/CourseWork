@@ -68,12 +68,20 @@ void Music::SetDateOfCreation(Date date)
 	_date_of_creation = date;
 }
 
-Music& Music::operator=(Music music)
+void Music::SetDateOfCreation(int day, int month, int year)
 {
-	_composer = music.GetComposer();
-	_name = music.GetName();
-	_type = music.GetMusicalCompositionType()->Clone();
-	_opus = music.GetOpus();
-	_date_of_creation = music.GetDateOfCreation();
+	_date_of_creation.SetDay(day);
+	_date_of_creation.SetMonth(month);
+	_date_of_creation.SetYear(year);
+}
+
+
+Music& Music::operator=(const Music& music)
+{
+	_composer = music._composer;
+	_name = music._name;
+	_type = music._type;
+	_opus = music._opus;
+	_date_of_creation = music._date_of_creation;
 	return *this;
 }

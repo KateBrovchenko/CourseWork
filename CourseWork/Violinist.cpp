@@ -1,6 +1,10 @@
 #include "Violinist.h"
 
 
+Violinist::Violinist() : Harmonist()
+{
+}
+
 Violinist::Violinist(string text) : Harmonist(text)
 {
 }

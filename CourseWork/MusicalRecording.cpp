@@ -2,6 +2,7 @@
 
 MusicalRecording::MusicalRecording()
 {
+	_duration_in_seconds = 0;
 }
 
 MusicalRecording::MusicalRecording(Music music, Performer performer, int duration)
@@ -75,11 +76,11 @@ string MusicalRecording::DurationToString()
 	}
 }
 
-MusicalRecording& MusicalRecording::operator=(MusicalRecording musical_recording)
+MusicalRecording& MusicalRecording::operator=(const MusicalRecording& musical_recording)
 {
-	_music = musical_recording.GetMusic();
-	_performer = musical_recording.GetPerformer();
-	_duration_in_seconds = musical_recording.GetDurationInSecnods();
-	_duration = musical_recording.GetDuration();
+	_music = musical_recording._music;
+	_performer = musical_recording._performer;
+	_duration_in_seconds = musical_recording._duration_in_seconds;
+	_duration = musical_recording._duration;
 	return *this;
 }

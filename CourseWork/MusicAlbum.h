@@ -1,8 +1,6 @@
 #pragma once
 #include "MusicalRecording.h"
 
-
-
 class MusicAlbum
 {
 private:
@@ -20,9 +18,10 @@ public:
 	void Print();
 
 	int GetSize();
+	int GetFilledSize();
 
 	MusicalRecording& operator[](int index);
-	MusicAlbum& operator=(MusicAlbum album);
+	MusicAlbum& operator=(const MusicAlbum& album);
 
 	~MusicAlbum();
 };

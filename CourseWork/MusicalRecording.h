@@ -24,6 +24,6 @@ public:
 
 	string DurationToString();
 
-	MusicalRecording& operator=(MusicalRecording musical_recording);
+	MusicalRecording& operator=(const MusicalRecording& musical_recording);
 };
 

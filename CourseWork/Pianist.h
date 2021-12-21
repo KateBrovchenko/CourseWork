@@ -4,6 +4,7 @@
 class Pianist : public Harmonist
 {
 public:
+	Pianist();
 	Pianist(string text);
 
 	void ShowType() override;

@@ -7,6 +7,7 @@ protected:
 	string _name;
 	string _text;
 public:
+	MusicalCompositionType();
 	MusicalCompositionType(string name, string text);
 
 	string GetName();

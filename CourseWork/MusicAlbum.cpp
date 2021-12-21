@@ -76,12 +76,17 @@ int MusicAlbum::GetSize()
 	return _size;
 }
 
+int MusicAlbum::GetFilledSize()
+{
+	return _filled_size;
+}
+
 MusicalRecording& MusicAlbum::operator[](int index)
 {
 	return _music_album[index];
 }
 
-MusicAlbum& MusicAlbum::operator=(MusicAlbum album)
+MusicAlbum& MusicAlbum::operator=(const MusicAlbum& album)
 {
 	_size = album._size;
 

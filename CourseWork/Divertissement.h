@@ -4,6 +4,7 @@
 class Divertissement : public MusicalCompositionType
 {
 public:
+	Divertissement();
 	Divertissement(string name, string text);
 
 	void ShowType() override;

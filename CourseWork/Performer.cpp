@@ -32,9 +32,9 @@ void Performer::SetHarmonist(Harmonist* harmonist)
 	_harmonist = harmonist->Clone();
 }
 
-Performer& Performer::operator=(Performer performer)
+Performer& Performer::operator=(const Performer& performer)
 {
-	_person = performer.GetPerson();
-	_harmonist = performer.GetHarmonist()->Clone();
+	_person = performer._person;
+	_harmonist = performer._harmonist;
 	return *this;
 }

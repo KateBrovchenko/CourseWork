@@ -4,6 +4,7 @@
 class Cellist : public Harmonist
 {
 public:
+	Cellist();
 	Cellist(string text);
 
 	void ShowType() override;

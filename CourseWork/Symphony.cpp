@@ -1,5 +1,9 @@
 #include "Symphony.h"
 
+Symphony::Symphony() : MusicalCompositionType()
+{
+}
+
 Symphony::Symphony(string name, string text) : MusicalCompositionType(name, text)
 {
 }

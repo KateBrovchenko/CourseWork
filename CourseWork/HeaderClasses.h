@@ -1,0 +1,18 @@
+#pragma once
+
+#include "Cellist.h"
+#include "Concert.h"
+#include "Conductor.h"
+#include "Date.h"
+#include "Divertissement.h"
+#include "Harmonist.h"
+#include "Music.h"
+#include "MusicAlbum.h"
+#include "MusicalCompositionType.h"
+#include "MusicalRecording.h"
+#include "Performer.h"
+#include "Person.h"
+#include "Pianist.h"
+#include "Sonata.h"
+#include "Symphony.h"
+#include "Violinist.h"

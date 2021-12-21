@@ -6,6 +6,7 @@ class Harmonist
 protected:
 	string _text;
 public:
+	Harmonist();
 	Harmonist(string text);
 
 	string GetText();
