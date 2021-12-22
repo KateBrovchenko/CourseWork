@@ -1,5 +1,6 @@
 #pragma once
 #include "MusicalRecording.h"
+#include <iomanip>
 
 class MusicAlbum
 {

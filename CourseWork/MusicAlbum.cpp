@@ -67,7 +67,7 @@ void MusicAlbum::Print()
 {
 	for (int i = 0; i < _size; i++)
 	{
-		cout << _music_album[i].GetMusic().GetComposer().GetName() << endl;
+		cout << "| " << _music_album[i].GetMusic().GetComposer().GetName() << " " << _music_album[i].GetMusic().GetComposer().GetSurname() << " |  " << _music_album[i].GetMusic().GetName() << " | " << setw(14) << fixed << setprecision(1) << _music_album[i].GetMusic().GetMusicalCompositionType()->GetName() << " |   " << _music_album[i].GetMusic().GetOpus() << "  |      " << _music_album[i].GetMusic().GetDateOfCreation().GetYear() << "      |" << endl;
 	}
 }
 
